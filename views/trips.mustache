@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
+    <body>
+    {{>menu}}
+        <h1>Trips</h1>
+
+    <div id=tripsContainer>    
+        <ul>
+        {{#allTrips}}
+        <img class="tripImage" src="{{image}}">
+            <li>
+                {{title}} 
+                {{departureDate}}
+                {{returnDate}}
+                <button id="delete">Delete</button>
+            </li>
+
+        {{/allTrips}}
+        </ul>
+    </div>
+    </body>
+</html>

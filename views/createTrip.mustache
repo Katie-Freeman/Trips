@@ -1,0 +1,18 @@
+<html>
+    <head>
+     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
+    <body>
+    {{>menu}}
+        <h1>Create Tasks</h1>
+        <form method= 'POST' action= "/createTrip">
+            <input type="text" placeholder ="Trip name" name="title" />
+            <input type="text" placeholder ="Paste Image URL here" name= "image" />
+            <lable for="start">Departure Date:</lable>
+            <input type="date" id="start" name="departureDate" value = "2022-01-25" min="2022-01-01" max="2032-12-31">
+            <lable for="end">Return Date:</lable>
+            <input type="date" id="end" name="returnDate" value = "2022-01-25" min="2022-01-01" max="2032-12-31">
+            <button id= "save">Save</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
+    <body>
+    {{>menu}}
+        <h1>Update Trips</h1>
+
+    <ul>
+    {{#allTrips}}
+    <img class="tripImage" src="{{image}}">
+        <li>
+            {{title}} 
+            {{departureDate}}
+            {{returnDate}}
+        </li>
+    <button>edit</button>
+
+    <form action="trips/deleteTrip" method="POST">
+    <input type="hidden" name="tripId" value={{tripId}}/>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    {{/allTrips}}
+    </ul>
+
+    </body>
+</html>

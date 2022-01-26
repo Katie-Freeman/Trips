@@ -1,0 +1,42 @@
+.tripImage {
+    width: 200px;
+    height: 300px;
+}
+body {
+    background-color:cornsilk ;
+    
+}
+
+#tripsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+li button {
+    max-width: 55px;
+    background-color: lavender;
+    color: lightcoral;
+    border-radius: 3px;
+}
+
+#menu {
+    
+    padding: 2em;
+}
+
+#home, #create, #viewAll, #update {
+    border-radius: 3px;
+    background-color: lavender;
+    color: lightcoral;
+    padding: 1em;
+    border: 2px solid black;
+    font-family: sans-serif;
+}
+
